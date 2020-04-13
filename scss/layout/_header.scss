@@ -100,4 +100,10 @@
             justify-content: center;
         }
 	}
+	@include screen('small') {
+        &__wrapper {
+            background: $black;
+            position: relative;
+        }
+    }
 }

@@ -3,17 +3,6 @@
     max-height: 440px;
     p {
         color: $white;
-        margin: 0;
-        &:not(:last-child) {
-            margin-bottom: 10px;
-        }
-    }
-    h1, h2 {
-        text-transform: uppercase;
-        margin-bottom: 50px;
-        span {
-            color: $accent-1;
-        }
     }
     > .row {
         height: 100%;
@@ -40,8 +29,9 @@
         position: absolute;
         max-width: 1020px;
         width: 100%;
-        top: 0;
+        top: 50px;
         right: 0;
+        z-index: 1;
         &--with {
             &-filter {
                 &:before {
@@ -56,4 +46,26 @@
             }
         }
     }
+	@include screen('small') {
+        height: auto;
+        max-height: 100%;
+        &__image {
+            position: relative;
+            width: 80%;
+            margin: 0 auto;
+        }
+        &__wrapper {
+            .section {
+                &__next {
+                    display: none;
+                }
+                &__container{
+                    &--with-next {
+                        padding-top: 40px;
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+        }
+	}
 }

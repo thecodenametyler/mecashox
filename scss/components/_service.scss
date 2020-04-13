@@ -1,0 +1,58 @@
+.service {
+    &__wrapper {
+        background: transparent;
+        color: $text;
+        .section {
+            &__container {
+                background-color: transparent;
+                &--outer--xxl {
+                    background-color: transparent;
+                }
+                &--outer {
+                    background-color: $white;
+                }
+                &--inner {
+                    background-color: transparent;
+                    
+                    &-with {
+                        &-bg {
+                            &-right {
+                                &:before {
+                                    background: $accent-3;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__listing {
+        &__item {
+            padding: 25px 20px;
+            margin-bottom: 10px;
+            img {
+                max-width: 40px;
+                max-height: 40px;
+                margin: 0;
+            }
+            [class^="icon-"], [class*=" icon-"], img {
+                display: block;
+                margin-bottom: 24px;
+            }
+            [class^="icon-"], [class*=" icon-"] {
+                @include font-size(42px);
+                @include line-height(42px);
+            }
+            p {
+                @include font-size(16px);
+                @include line-height(20px);
+                margin: 0;
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+            }
+            &__wrapper {}
+        }
+    }
+}
