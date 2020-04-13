@@ -1,0 +1,59 @@
+.banner {
+    height: 100vh;
+    max-height: 440px;
+    p {
+        color: $white;
+        margin: 0;
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+    h1, h2 {
+        text-transform: uppercase;
+        margin-bottom: 50px;
+        span {
+            color: $accent-1;
+        }
+    }
+    > .row {
+        height: 100%;
+    }
+    &__wrapper {
+        background: $accent-2;
+        color: $white;
+        .section {
+            &__container {
+                background-color: transparent;
+                &--outer--xxl {
+                    background-color: transparent;
+                }
+                &--outer {
+                    background-color: transparent;
+                }
+                &--inner {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+    &__image {
+        position: absolute;
+        max-width: 1020px;
+        width: 100%;
+        top: 0;
+        right: 0;
+        &--with {
+            &-filter {
+                &:before {
+                    content: "";
+                    background: rgba($black, 0.3);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
