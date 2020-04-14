@@ -1,0 +1,61 @@
+.getintouch {
+    p {
+        margin: 0;
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+    &__wrapper {
+        background: $white;
+        color: $text;
+        .section {
+            &__container {
+                background: transparent;
+                &--outer--xxl {
+                    background: transparent;
+                }
+                &--outer {
+                    background: transparent;
+                }
+                &--inner {
+                    background: transparent;
+                }
+            }
+        }
+    }
+    &__label {
+        position: relative;
+        padding: 8px 8px 8px 30px;
+        margin-left: 20px;
+        background: $accent-3;
+        display: inline-block;
+        @include font-size(16px);
+        @include line-height(20px);
+        font-weight: 700;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: -20px;
+            transform: translateY(-50%);
+            height: 2px;
+            width: 34px;
+            background: $text;
+        }
+        &__wrapper {
+            margin-bottom: 20px;
+        }
+    }
+    &__info {
+        p {
+            @include font-size(24px);
+            @include line-height(28px);
+        }
+    }
+    &__text {
+        p {
+            @include font-size(18px);
+            @include line-height(22px);
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.gallery {
+    &__wrapper {
+        background: transparent;
+        color: $text;
+        .section {
+            &__container {
+                background: transparent;
+                &--outer--xxl {
+                    background: transparent;
+                }
+                &--outer {
+                    background: $white;
+                }
+                &--inner {
+                    background: transparent;
+                }
+            }
+        }
+    }
+}

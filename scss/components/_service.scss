@@ -13,10 +13,9 @@
                 }
                 &--inner {
                     background-color: transparent;
-                    
                     &-with {
                         &-bg {
-                            &-right {
+                            &-left {
                                 &:before {
                                     background: $accent-3;
                                 }

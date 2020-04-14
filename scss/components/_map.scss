@@ -1,0 +1,25 @@
+.map {
+    #map {
+        height: 90vh;
+        max-height: 650px;
+        width: 100%;
+    }
+    &__wrapper {
+        background: $white;
+        color: $text;
+        .section {
+            &__container {
+                background: transparent;
+                &--outer--xxl {
+                    background: transparent;
+                }
+                &--outer {
+                    background: transparent;
+                }
+                &--inner {
+                    background: transparent;
+                }
+            }
+        }
+    }
+}

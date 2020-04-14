@@ -13,6 +13,13 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+  crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+ integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+ crossorigin=""></script>
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -87,7 +94,7 @@
     <section class="section__wrapper service__wrapper">
       <div class="section__container--outer--xxl">
         <div class="section__container--outer">
-          <div class="section__container--inner section__container--inner-with-bg-right">
+          <div class="section__container--inner section__container--inner-with-bg-left">
             <div class="container section__container service">
               <div class="row">
                 <div class="col-xs-12 col-md-12">
@@ -130,19 +137,19 @@
                       <div class="col-xs-6 col-sm-4 col-md-4 service__listing__item__wrapper">
                         <div class=" service__listing__item">
                           <img src="./img/icon/tool.svg" class="img-responsive" alt="service badge" width="40">
-                          <p>Award winning team</p>
+                          <p>Park Tool Equipement</p>
                         </div>
                       </div>
                       <div class="col-xs-6 col-sm-4 col-md-4 service__listing__item__wrapper">
                         <div class=" service__listing__item">
                           <img src="./img/icon/tool.svg" class="img-responsive" alt="service badge" width="40">
-                          <p>Award winning team</p>
+                          <p>Park Tool Equipement</p>
                         </div>
                       </div>
                       <div class="col-xs-6 col-sm-4 col-md-4 service__listing__item__wrapper">
                         <div class=" service__listing__item">
                           <img src="./img/icon/tool.svg" class="img-responsive" alt="service badge" width="40">
-                          <p>Equipement Park Tool</p>
+                          <p>Park Tool Equipement</p>
                         </div>
                       </div>
                     </div>
@@ -154,15 +161,28 @@
         </div>
       </div>
     </section>
-  </div>
-    <section class="section__wrapper">
+
+    <section class="section__wrapper gallery__wrapper">
       <div class="section__container--outer--xxl">
         <div class="section__container--outer">
-          <div class="section__container--inner">
-            <div class="container section__container">
+          <div class="section__container--inner section__container--inner-with-bg-right">
+            <div class="container section__container gallery">
               <div class="row">
                 <div class="col-xs-12 col-md-12">
-                  <!-- <div class="box">Responsive</div> -->
+                  <div class="section__index">
+                    <ul class="section__index__list">
+                      <li class="section__index__item">02</li>
+                      <li class="section__index__item">Workshop</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row middle-xs">
+                <div class="col-xs-12 col-md-5">
+                  <div class="section__content">
+                    <h2><em>The Workshop</em></h2>
+                    <p>Here a sneak peak to what, how and where we do our work. Ofcourse When the shreding are over, its maintenance time.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -170,6 +190,296 @@
         </div>
       </div>
     </section>
+
+    <section class="section__wrapper pricing__wrapper">
+      <div class="section__container--outer--xxl">
+        <div class="section__container--outer section__container--outer-with-bg-threequarter">
+          <div class="section__container--inner">
+            <div class="container section__container pricing">
+              <div class="row">
+                <div class="col-xs-12 col-md-8">
+                  <div class="section__index">
+                    <ul class="section__index__list">
+                      <li class="section__index__item">03</li>
+                      <li class="section__index__item">Pricing</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                  <div class="section__documents">
+                    <ul class="section__documents__list">
+                      <li class="section__documents__item">
+                        <a href="#" class="btn btn--icon  btn--icon-circle"><i class="icon-arrow"></i><span>Terms and conditions</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row middle-xs">
+                <div class="col-xs-12 col-md-12">
+                  <div class="section__content">
+                    <h2><em>Price<br> for our services</em></h2>
+                    <a href="#" class="btn btn--icon btn--fill btn--rounded"><i class="icon-arrow-down"></i><span>Learn more<span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-md-12">
+                  <div class="pricing__table">
+                    <ul class="pricing__table__list">
+                      <li class="pricing__table__header">
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-4 col-md-3">
+                            <p>Title</p>
+                          </div>
+                          <div class="col-xs-12 col-sm-6 col-md-7">
+                            <p>Details</p>
+                          </div>
+                          <div class="col-xs-12 col-sm-2 col-md-2">
+                           <p>Price</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="pricing__table__item">
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-4 col-md-3">
+                            <small class="show--xs"><strong>Title : </strong></small>
+                            <p>Bike Service</p>
+                          </div>
+                          <div class="col-xs-12 col-sm-6 col-md-7">
+                            <small class="show--xs"><strong>Details : </strong></small>
+                            <p>Her resistance to the mind probe is considerable. It will be some time before we can extract any information from her. The final check-out is complete. All systems are operational. What course shall we set? Perhaps she would respond to an alternative form of persuasion. What do you mean? I think it is time we demonstrate the full power of this station. Set your course for Princess Leia's home planet of Alderaan. With pleasure.</p>
+                          </div>
+                          <div class="col-xs-12 col-sm-2 col-md-2">
+                            <small class="show--xs"><strong>Price : </strong></small>
+                            <div class="pricing__table__item__price">
+                              <p><em><strong>+6000 mur</strong></em></p>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="pricing__table__item">
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-4 col-md-3">
+                            <small class="show--xs"><strong>Title : </strong></small>
+                            <p>Bike tuneup</p>
+                          </div>
+                          <div class="col-xs-12 col-sm-6 col-md-7">
+                            <small class="show--xs"><strong>Details : </strong></small>
+                            <p>Yes. Our scout ships have reached Dantooine. They found the remains of a Rebel base, but they estimate that it has been deserted for some time. They are now conducting an extensive search of the surrounding systems.</p>
+                          </div>
+                          <div class="col-xs-12 col-sm-2 col-md-2">
+                            <small class="show--xs"><strong>Price : </strong></small>
+                            <div class="pricing__table__item__price">
+                              <p><em><strong>2000 mur</strong></em></p>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="pricing__table__item">
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-4 col-md-3">
+                            <small class="show--xs"><strong>Title : </strong></small>
+                            <p>Brake service - <strong>per brake</strong></p>
+                          </div>
+                          <div class="col-xs-12 col-sm-6 col-md-7">
+                            <small class="show--xs"><strong>Details : </strong></small>
+                            <p>Clean seal and rebuild brake caliper and levers, plus a brake bleed with piston adjusments.</p>
+                          </div>
+                          <div class="col-xs-12 col-sm-2 col-md-2">
+                            <small class="show--xs"><strong>Price : </strong></small>
+                            <div class="pricing__table__item__price">
+                              <p><em><strong>600 mur</strong></em></p>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-md-12">
+                  <div class="pricing__download">
+                    <ul class="pricing__download__list">
+                      <li class="pricing__download__item">
+                        <a href="#" class="btn btn--icon  btn--icon-circle"><i class="icon-arrow-circle"></i><span>Price list (.pdf, 5.2 MB)</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__wrapper news__wrapper">
+      <div class="section__container--outer--xxl">
+        <div class="section__container--outer">
+          <div class="section__container--inner section__container--inner-with-bg-right">
+            <div class="container section__container news">
+              <div class="row">
+                <div class="col-xs-12 col-md-12">
+                  <div class="section__index">
+                    <ul class="section__index__list">
+                      <li class="section__index__item">04</li>
+                      <li class="section__index__item">News</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row middle-xs">
+                <div class="col-xs-12 col-md-12">
+                  <div class="section__content">
+                    <h2><em>News</em></h2>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row middle-xs news__item">
+                <div class="col-xs-12 col-sm-4 col-md-5">
+                  <div class="news__cover">
+                    <img src="./img/banner-1.jpg" class="img-responsive" alt="mecashox wokshop">
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1 col-sm-offset-1">
+                  <div class="news__content">
+                    <div class="news__date__wrapper"><span class="news__date">14/04/2020</span></div>
+                    <h3><em>All right, move it! I said move it! Go on! Hello! I say, over there! Were you looking for me?</em></h3>
+                    <a href="#" class="btn btn--icon btn--icon btn--icon-circle btn--icon-circle--right"><span>Read more</span><i class="icon-arrow"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="row middle-xs news__item">
+                <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1 col-sm-offset-1">
+                  <div class="news__content">
+                    <div class="news__date__wrapper"><span class="news__date">14/04/2020</span></div>
+                    <h3><em>All right, move it! I said move it! Go on! Hello! I say, over there! Were you looking for me?</em></h3>
+                    <a href="#" class="btn btn--icon btn--icon-circle btn--icon-circle--right"><span>Read more</span><i class="icon-arrow"></i></a>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-5 col-md-offset-1 col-sm-offset-1">
+                  <div class="news__cover">
+                    <img src="./img/banner-1.jpg" class="img-responsive" alt="mecashox wokshop">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12 col-md-12">
+                  <div class="news__more">
+                      <a href="#" class="btn btn--icon  btn--icon-circle btn--icon-circle--right"><span>View all</span><i class="icon-arrow"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__wrapper sponsors__wrapper">
+      <div class="section__container--outer--xxl">
+        <div class="section__container--outer section__container--outer-with-bg-threequarter section__container--outer-with-bg-threequarter-inverse">
+          <div class="section__container--inner">
+            <div class="container section__container sponsors">
+              <div class="row">
+                <div class="col-xs-12 col-md-12">
+                  <div class="section__index">
+                    <ul class="section__index__list">
+                      <li class="section__index__item">05</li>
+                      <li class="section__index__item">Sponsors</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row sponsors__row">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                  <div class="sponsors__item">
+                    <a href="#" target="_blank" rel="noopener"><img src="./img/logo-blk.png" alt="logo Sponsors" width="120" class="img-responsive"></a>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                  <div class="sponsors__item">
+                    <a href="#" target="_blank" rel="noopener"><img src="./img/logo-blk.png" alt="logo Sponsors" width="120" class="img-responsive"></a>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                  <div class="sponsors__item">
+                    <a href="#" target="_blank" rel="noopener"><img src="./img/logo-blk.png" alt="logo Sponsors" width="120" class="img-responsive"></a>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                  <div class="sponsors__item">
+                    <a href="#" target="_blank" rel="noopener"><img src="./img/logo-blk.png" alt="logo Sponsors" width="120" class="img-responsive"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__wrapper getintouch__wrapper">
+      <div class="section__container--outer--xxl">
+        <div class="section__container--outer">
+          <div class="section__container--inner">
+            <div class="container section__container getintouch">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-4">
+                  <div class="getintouch__text">
+                    <p>Feel free to get in touch with us, <br> let's shred :)</p>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4">
+                  <div class="getintouch__label__wrapper">
+                    <span class="getintouch__label">Phone</span>
+                  </div>
+                  <div class="getintouch__info">
+                    <p>(230) 5 123 4567</p>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4">
+                  <div class="getintouch__label__wrapper">
+                    <span class="getintouch__label">Address</span>
+                  </div>
+                  <div class="getintouch__info">
+                    <p>Maurice Cure Lane, Vacoas-Phoenix, Mauritius</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__wrapper map__wrapper">
+      <div class="section__container--outer--xxl">
+        <div class="section__container--outer">
+          <div class="map">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="section__wrapper">
+      <div class="section__container--outer--xxl">
+        <div class="section__container--outer">
+          <div class="section__container--inner">
+            <div class="container section__container">
+              <div class="row">
+                <div class="col-xs-12 col-md-12">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
   </div>
   <footer class="footer__wrapper">
     <div class="footer container">
@@ -200,7 +510,7 @@
       <div class="row center-xs footer__links">
         <div class="col-xs-12 col-md-12">
           <ul class="footer__links__list">
-            <li><p>&copy; copyright 2019 codenametyler</p></li>
+            <li><p>&copy; copyright 2020 codenametyler</p></li>
           </ul>
         </div>
       </div>

@@ -1,0 +1,97 @@
+.pricing {
+    &__wrapper {
+        background: transparent;
+        color: $text;
+        .section {
+            &__container {
+                background: transparent;
+                &--outer--xxl {
+                    background: transparent;
+                }
+                &--outer {
+                    background: $white;
+                    &-with {
+                        &-bg {
+                            &-threequarter {
+                                &:before {
+                                    background: $accent-3;
+                                }
+                                .section {
+                                    &__container{
+                                        &--inner {
+                                            background: $accent-3;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &--inner {
+                    background: transparent;
+                    &-with {
+                        &-bg {
+                            &-left {
+                                &:before {
+                                    background: transparent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__table {
+        margin-top: 50px;
+        p {
+			@include font-size(16px);
+			@include line-height(18px);
+            margin: 0;
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+        &__list {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+        }
+        &__header {
+            padding: 14px 0;
+            border-bottom: 2px solid $text;
+            margin-bottom: 12px;
+            p {
+                @include font-size(18px);
+                @include line-height(22px);
+                font-weight: 700;
+            }
+        }
+        &__item {
+            padding: 12px 0;
+            small {
+                margin: 5px 0;
+            }
+            &__price {
+                p {
+                    @include font-size(24px);
+                    @include line-height(28px);
+                }
+            }
+        }
+    }
+    &__download {
+        margin-top: 50px;
+        &__list {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+        }
+        &__item {
+            text-align: center;
+			&:not(:last-child) {
+				margin-bottom: 10px;
+            }
+        }
+    }
+}

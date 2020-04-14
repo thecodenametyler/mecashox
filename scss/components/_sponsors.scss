@@ -1,0 +1,42 @@
+.sponsors {
+    &__wrapper {
+        background: transparent;
+        color: $text;
+        .section {
+            &__container {
+                background: transparent;
+                &--outer--xxl {
+                    background: transparent;
+                }
+                &--outer {
+                    background: $white;
+                    &-with {
+                        &-bg {
+                            &-threequarter {
+                                &:before {
+                                    background: $accent-3;
+                                }
+                            }
+                        }
+                    }
+                }
+                &--inner {
+                    background: transparent;
+                    &-with {
+                        &-bg {
+                            &-left {
+                                &:before {
+                                    background: transparent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__row {}
+    &__item {
+        padding: 20px;
+    }
+}
