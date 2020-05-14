@@ -2647,7 +2647,8 @@ h3, .h3 {
     height: 100%; }
   .banner__wrapper {
     background: #0f0f0f;
-    color: #FFF; }
+    color: #FFF;
+    z-index: 1; }
     .banner__wrapper .section__container {
       background-color: transparent; }
       .banner__wrapper .section__container--outer--xxl {
@@ -2660,7 +2661,7 @@ h3, .h3 {
     position: absolute;
     max-width: 1020px;
     width: 100%;
-    top: 40px;
+    top: 0;
     right: 0;
     z-index: 1; }
     .banner__image--with-filter:before {
